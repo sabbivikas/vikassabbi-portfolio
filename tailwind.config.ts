@@ -20,9 +20,9 @@ export default {
 		},
 		extend: {
 			fontFamily: {
-				sans: ['-apple-system', 'BlinkMacSystemFont', 'SF Pro Display', 'SF Pro Text', 'system-ui', 'sans-serif'],
-				display: ['-apple-system', 'BlinkMacSystemFont', 'SF Pro Display', 'system-ui', 'sans-serif'],
-				text: ['-apple-system', 'BlinkMacSystemFont', 'SF Pro Text', 'system-ui', 'sans-serif'],
+				sans: ['"Times New Roman"', 'Times', '"Liberation Serif"', 'serif'],
+				display: ['"Times New Roman"', 'Times', '"Liberation Serif"', 'serif'],
+				text: ['"Times New Roman"', 'Times', '"Liberation Serif"', 'serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',

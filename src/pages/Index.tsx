@@ -14,6 +14,8 @@ import EducationSection from '@/components/sections/EducationSection';
 import MediaSection from '@/components/sections/MediaSection';
 import PhilosophySection from '@/components/sections/PhilosophySection';
 import Footer from '@/components/sections/Footer';
+import ReadingProgress from '@/components/ReadingProgress';
+import RainAmbience from '@/components/RainAmbience';
 
 const Index = () => {
   const [showIntro, setShowIntro] = useState(true);
@@ -36,10 +38,12 @@ const Index = () => {
 
   return (
     <>
+      <ReadingProgress />
       {showIntro && <IntroAnimation onComplete={handleIntroComplete} />}
       
       <div className={`max-w-5xl mx-auto px-6 ${contentVisible ? 'opacity-100 transition-opacity duration-1000' : 'opacity-0'}`}>
         <Header />
+        <RainAmbience />
         
         <main className="py-12 lowercase">
           <ProfileHeader />

@@ -51,7 +51,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       {link && (
         <a 
           href={link} 
-          className="text-sm inline-flex border-b border-primary pb-px hover:border-primary/50 transition-colors"
+          className="story-link text-sm"
           target="_blank" 
           rel="noopener noreferrer"
         >

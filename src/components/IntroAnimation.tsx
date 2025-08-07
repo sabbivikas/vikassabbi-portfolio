@@ -22,17 +22,22 @@ const IntroAnimation: React.FC<IntroAnimationProps> = ({
     "portfolio."
   ];
   
-  // Safety timer to prevent the animation from getting stuck
+// Safety timer to prevent the animation from getting stuck
   const safetyTimerRef = useRef<NodeJS.Timeout | null>(null);
   const completionRef = useRef<boolean>(false);
+
+  const complete = () => {
+    if (!completionRef.current && onComplete) {
+      completionRef.current = true;
+      if (safetyTimerRef.current) clearTimeout(safetyTimerRef.current);
+      onComplete();
+    }
+  };
   
   // Set a safety timeout that will force completion after 8 seconds
   useEffect(() => {
     safetyTimerRef.current = setTimeout(() => {
-      if (!completionRef.current && onComplete) {
-        completionRef.current = true;
-        onComplete();
-      }
+      complete();
     }, 8000);
     
     return () => {
@@ -41,6 +46,17 @@ const IntroAnimation: React.FC<IntroAnimationProps> = ({
       }
     };
   }, [onComplete]);
+
+  // keyboard: press 's' or 'Escape' to skip
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key.toLowerCase() === 's' || e.key === 'Escape') {
+        complete();
+      }
+    };
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
+  }, []);
 
   useEffect(() => {
     // Set current phrase to type
@@ -61,10 +77,7 @@ const IntroAnimation: React.FC<IntroAnimationProps> = ({
             if (phraseIndex === phrases.length - 1) {
               // Wait a moment on "portfolio" before completing
               setTimeout(() => {
-                if (!completionRef.current && onComplete) {
-                  completionRef.current = true;
-                  onComplete();
-                }
+                complete();
               }, 800);
               return next;
             }
@@ -102,6 +115,16 @@ const IntroAnimation: React.FC<IntroAnimationProps> = ({
 
   return (
     <div className={cn("fixed inset-0 bg-background flex items-center justify-center z-50", className)}>
+      {/* Skip button */}
+      {onComplete && (
+        <button
+          onClick={complete}
+          className="absolute top-4 right-4 px-3 py-1.5 text-sm border rounded-md hover-scale"
+          aria-label="Skip intro"
+        >
+          skip
+        </button>
+      )}
       <div className="text-center relative">
         <div className="absolute inset-0 opacity-10">
           <div className="w-32 h-32 border border-foreground/20 rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 animate-spin-slow"></div>

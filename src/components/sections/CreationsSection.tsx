@@ -56,6 +56,14 @@ const CreationsSection = () => {
           status="green"
         />
         <ProjectCard
+          title="🛡️ sky patrol"
+          description="a vigilant sky monitoring system"
+          year=""
+          link="https://skypatrol.vikassabbi.spwn.co"
+          linkText="visit sky patrol"
+          status="green"
+        />
+        <ProjectCard
           title="🎨 bomma.art"
           description="a visual storytelling space that brings character art to life. &quot;bomma&quot; means doll — and this platform brings those figures into modern narratives."
           year=""

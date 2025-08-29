@@ -56,11 +56,11 @@ const CreationsSection = () => {
           status="green"
         />
         <ProjectCard
-          title="🛡️ sky patrol"
-          description="a vigilant sky monitoring system"
+          title="🐝 barry's pollination battle"
+          description="a buzzing adventure game where barry the bee fights to save the pollination process and protect nature's delicate ecosystem."
           year=""
           link="https://skypatrol.vikassabbi.spwn.co"
-          linkText="visit sky patrol"
+          linkText="play barry's battle"
           status="green"
         />
         <ProjectCard

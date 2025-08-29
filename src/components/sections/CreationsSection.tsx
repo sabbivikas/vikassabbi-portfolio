@@ -64,6 +64,14 @@ const CreationsSection = () => {
           status="green"
         />
         <ProjectCard
+          title="🌿 jungle commando"
+          description="an action-packed jungle adventure where commandos navigate through dense forests on tactical missions."
+          year=""
+          link="https://junglecommando.vikassabbi.spwn.co"
+          linkText="play jungle commando"
+          status="green"
+        />
+        <ProjectCard
           title="🎨 bomma.art"
           description="a visual storytelling space that brings character art to life. &quot;bomma&quot; means doll — and this platform brings those figures into modern narratives."
           year=""

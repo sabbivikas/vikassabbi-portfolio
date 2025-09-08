@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useTheme } from 'next-themes'
 import FireParticles from './FireParticles'
+import RainAmbience from './RainAmbience'
 
 interface Leaf {
   id: number
@@ -24,8 +25,8 @@ const FallAmbience: React.FC = () => {
   }
 
   useEffect(() => {
-    // Only generate leaves if not in dark mode
-    if (theme !== 'dark') {
+    // Only generate leaves for light/fall themes
+    if (theme === 'light' || theme === 'fall') {
       const newLeaves: Leaf[] = Array.from({ length: 8 }).map((_, i) => ({
         id: i,
         left: Math.random() * 100,
@@ -41,9 +42,13 @@ const FallAmbience: React.FC = () => {
     }
   }, [theme])
 
-  // Show fire particles in dark mode, leaves in light mode
+  // Show different effects based on theme
   if (theme === 'dark') {
     return <FireParticles />
+  }
+  
+  if (theme === 'rain') {
+    return <RainAmbience />
   }
 
   return (

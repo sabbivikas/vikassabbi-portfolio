@@ -1,14 +1,9 @@
-
 import React from 'react';
 import Section from '@/components/Section';
-
 const About = () => {
-  return (
-    <Section id="about" title="👋 about me">
+  return <Section id="about" title="👋 about me">
       <div className="prose max-w-none">
-        <p className="mb-4 text-lg">
-          hi, i'm v.
-        </p>
+        <p className="mb-4 text-lg">hi, i'm vikas</p>
         <p className="mb-4">
           i create things that feel. things that tell stories, spark emotion, and make people pause, even for a moment, to remember what really matters.
         </p>
@@ -28,8 +23,6 @@ const About = () => {
           to make something wonderful for humanity.
         </p>
       </div>
-    </Section>
-  );
+    </Section>;
 };
-
 export default About;

@@ -72,6 +72,14 @@ const CreationsSection = () => {
           status="green"
         />
         <ProjectCard
+          title="🧪 the alchemist"
+          description="a mystical adventure game where players discover the secrets of alchemy and transformation."
+          year=""
+          link="https://www.spawn.co/play/d355e122-b5d4-45f4-8b6f-af30d8e90e00"
+          linkText="play the alchemist"
+          status="green"
+        />
+        <ProjectCard
           title="🎨 bomma.art"
           description="a visual storytelling space that brings character art to life. &quot;bomma&quot; means doll — and this platform brings those figures into modern narratives."
           year=""

@@ -61,11 +61,12 @@ const FallAmbience: React.FC = () => {
   }
 
   useEffect(() => {
+    console.log('Theme changed to:', theme)
     if (theme !== 'fall') return
     
-    // Generate fewer, cleaner falling leaves (only fall colors)
+    // Generate fewer, cleaner falling leaves (only fall colors) with unique IDs
     const newLeaves: Leaf[] = Array.from({ length: 12 }).map((_, i) => ({
-      id: i,
+      id: Date.now() + i, // Ensure unique IDs
       left: Math.random() * 100,
       duration: 15 + Math.random() * 15, // 15-30 seconds for gentle fall
       delay: Math.random() * 20,
@@ -89,6 +90,7 @@ const FallAmbience: React.FC = () => {
           if (shouldLand && !leaf.hasLanded) {
             landedLeaves.push({
               ...leaf,
+              id: leaf.id + 10000, // Make ground leaf IDs unique from falling leaves
               hasLanded: true,
               groundPosition: leaf.left + (Math.random() - 0.5) * 10 // slight scatter on ground
             })
@@ -107,6 +109,10 @@ const FallAmbience: React.FC = () => {
 
     return () => clearInterval(interval)
   }, [theme])
+
+  // Debug: Add console log to show when component renders
+
+  console.log('FallAmbience render:', { theme, leavesCount: leaves.length, groundLeavesCount: groundLeaves.length })
 
   if (theme !== 'fall') return null
 

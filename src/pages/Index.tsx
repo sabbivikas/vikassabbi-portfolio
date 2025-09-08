@@ -15,7 +15,6 @@ import MediaSection from '@/components/sections/MediaSection';
 import PhilosophySection from '@/components/sections/PhilosophySection';
 import Footer from '@/components/sections/Footer';
 import ReadingProgress from '@/components/ReadingProgress';
-import RainAmbience from '@/components/RainAmbience';
 import FallAmbience from '@/components/FallAmbience';
 
 const Index = () => {
@@ -44,7 +43,6 @@ const Index = () => {
       
       <div className={`max-w-5xl mx-auto px-6 ${contentVisible ? 'opacity-100 transition-opacity duration-1000' : 'opacity-0'}`}>
         <Header />
-        <RainAmbience />
         <FallAmbience />
         
         <main className="py-12 lowercase">

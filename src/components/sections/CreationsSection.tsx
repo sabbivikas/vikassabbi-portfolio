@@ -80,6 +80,14 @@ const CreationsSection = () => {
           status="green"
         />
         <ProjectCard
+          title="📚 the tales of nani"
+          description="an interactive storytelling game featuring a wise grandmother sharing timeless wisdom and values through engaging narratives."
+          year=""
+          link="https://s-axis-d-git-sound-0hrw.spwn.co"
+          linkText="play the tales of nani"
+          status="green"
+        />
+        <ProjectCard
           title="🎨 bomma.art"
           description="a visual storytelling space that brings character art to life. &quot;bomma&quot; means doll — and this platform brings those figures into modern narratives."
           year=""

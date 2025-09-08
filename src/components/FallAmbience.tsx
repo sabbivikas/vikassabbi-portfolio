@@ -19,10 +19,45 @@ const FallAmbience: React.FC = () => {
   const { theme } = useTheme()
   const [leaves, setLeaves] = useState<Leaf[]>([])
   const [groundLeaves, setGroundLeaves] = useState<Leaf[]>([])
+  const [cleaningLeaves, setCleaningLeaves] = useState<Set<number>>(new Set())
 
   const leafEmojis = {
     maple: '🍁',
     oak: '🍂'
+  }
+
+  const handleLeafClick = (leafId: number) => {
+    setCleaningLeaves(prev => new Set([...prev, leafId]))
+    
+    // Remove leaf after animation
+    setTimeout(() => {
+      setGroundLeaves(prev => prev.filter(leaf => leaf.id !== leafId))
+      setCleaningLeaves(prev => {
+        const newSet = new Set(prev)
+        newSet.delete(leafId)
+        return newSet
+      })
+    }, 300)
+  }
+
+  const handleGroundClick = () => {
+    if (groundLeaves.length === 0) return
+    
+    // Clean all leaves with staggered animation
+    groundLeaves.forEach((leaf, index) => {
+      setTimeout(() => {
+        setCleaningLeaves(prev => new Set([...prev, leaf.id]))
+      }, index * 50)
+      
+      setTimeout(() => {
+        setGroundLeaves(prev => prev.filter(l => l.id !== leaf.id))
+        setCleaningLeaves(prev => {
+          const newSet = new Set(prev)
+          newSet.delete(leaf.id)
+          return newSet
+        })
+      }, index * 50 + 300)
+    })
   }
 
   useEffect(() => {
@@ -104,23 +139,35 @@ const FallAmbience: React.FC = () => {
         </div>
       ))}
       
-      {/* Ground leaves */}
-      {groundLeaves.map((leaf) => (
-        <span
-          key={`ground-${leaf.id}`}
-          className="absolute bottom-0 transition-all duration-1000 text-xl"
-          style={{
-            left: `${leaf.groundPosition}%`,
-            fontSize: `${leaf.size * 0.8}rem`,
-            opacity: leaf.opacity * 0.7,
-            filter: `sepia(0.4) saturate(1.1) brightness(0.9)`,
-            transform: `rotate(${Math.random() * 60 - 30}deg)`,
-            zIndex: Math.floor(Math.random() * 5)
-          }}
-        >
-          {leafEmojis[leaf.type]}
-        </span>
-      ))}
+      {/* Interactive ground leaves - click to clean! */}
+      <div 
+        className="absolute bottom-0 left-0 right-0 h-20 pointer-events-auto cursor-pointer z-20"
+        onClick={handleGroundClick}
+        title="Click to clean up the leaves! 🍂"
+      >
+        {groundLeaves.map((leaf) => (
+          <span
+            key={`ground-${leaf.id}`}
+            className={`absolute bottom-0 transition-all duration-300 text-xl hover:scale-110 cursor-pointer pointer-events-auto ${
+              cleaningLeaves.has(leaf.id) ? 'animate-pulse opacity-0 scale-0' : ''
+            }`}
+            style={{
+              left: `${leaf.groundPosition}%`,
+              fontSize: `${leaf.size * 0.8}rem`,
+              opacity: cleaningLeaves.has(leaf.id) ? 0 : leaf.opacity * 0.7,
+              filter: `sepia(0.4) saturate(1.1) brightness(0.9)`,
+              transform: `rotate(${Math.random() * 60 - 30}deg) ${cleaningLeaves.has(leaf.id) ? 'scale(0)' : 'scale(1)'}`,
+              zIndex: Math.floor(Math.random() * 5)
+            }}
+            onClick={(e) => {
+              e.stopPropagation()
+              handleLeafClick(leaf.id)
+            }}
+          >
+            {leafEmojis[leaf.type]}
+          </span>
+        ))}
+      </div>
     </div>
   )
 }

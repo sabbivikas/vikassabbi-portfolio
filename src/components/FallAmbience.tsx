@@ -62,7 +62,7 @@ const FallAmbience: React.FC = () => {
 
   useEffect(() => {
     console.log('Theme changed to:', theme)
-    if (theme !== 'fall') return
+    // Always show fall animations regardless of theme
     
     // Generate fewer, cleaner falling leaves (only fall colors) with unique IDs
     const newLeaves: Leaf[] = Array.from({ length: 12 }).map((_, i) => ({
@@ -108,13 +108,13 @@ const FallAmbience: React.FC = () => {
     }, 1000)
 
     return () => clearInterval(interval)
-  }, [theme])
+  }, [])
 
   // Debug: Add console log to show when component renders
 
   console.log('FallAmbience render:', { theme, leavesCount: leaves.length, groundLeavesCount: groundLeaves.length })
 
-  if (theme !== 'fall') return null
+  // Always show fall animations
 
   return (
     <div className="pointer-events-none fixed inset-0 z-10 overflow-hidden">

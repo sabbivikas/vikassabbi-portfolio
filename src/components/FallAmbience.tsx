@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from 'react'
-import { useTheme } from 'next-themes'
 
 interface Leaf {
   id: number
   left: number
   duration: number
   delay: number
-  type: 'maple' | 'oak' | 'birch' | 'elm'
+  type: 'maple' | 'oak'
   size: number
   rotationSpeed: number
   swayIntensity: number
@@ -14,35 +13,28 @@ interface Leaf {
 }
 
 const FallAmbience: React.FC = () => {
-  const { theme } = useTheme()
   const [leaves, setLeaves] = useState<Leaf[]>([])
 
   const leafEmojis = {
     maple: '🍁',
-    oak: '🍂', 
-    birch: '🍃',
-    elm: '🌿'
+    oak: '🍂'
   }
 
   useEffect(() => {
-    if (theme !== 'fall') return
-    
-    // Generate beautiful, varied falling leaves
-    const newLeaves: Leaf[] = Array.from({ length: 30 }).map((_, i) => ({
+    // Generate beautiful, varied falling autumn leaves
+    const newLeaves: Leaf[] = Array.from({ length: 25 }).map((_, i) => ({
       id: i,
       left: Math.random() * 100,
-      duration: 12 + Math.random() * 20, // 12-32 seconds for very gentle fall
+      duration: 12 + Math.random() * 18, // 12-30 seconds for gentle fall
       delay: Math.random() * 15,
-      type: ['maple', 'oak', 'birch', 'elm'][Math.floor(Math.random() * 4)] as any,
-      size: 0.6 + Math.random() * 1.2, // 0.6-1.8x size variation
+      type: ['maple', 'oak'][Math.floor(Math.random() * 2)] as any,
+      size: 0.8 + Math.random() * 1.0, // 0.8-1.8x size variation
       rotationSpeed: 0.5 + Math.random() * 2, // varied rotation speeds
       swayIntensity: 20 + Math.random() * 40, // 20-60px sway
-      opacity: 0.4 + Math.random() * 0.6 // 0.4-1.0 opacity
+      opacity: 0.5 + Math.random() * 0.5 // 0.5-1.0 opacity
     }))
     setLeaves(newLeaves)
-  }, [theme])
-
-  if (theme !== 'fall') return null
+  }, [])
 
   return (
     <div className="pointer-events-none fixed inset-0 z-10 overflow-hidden">

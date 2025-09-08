@@ -16,8 +16,8 @@ const FireParticles: React.FC = () => {
 
   const fireEmojis = {
     spark: '✨',
-    ember: '🔥',
-    flame: '🧡'
+    ember: '🔥', 
+    flame: '💥'
   }
 
   useEffect(() => {

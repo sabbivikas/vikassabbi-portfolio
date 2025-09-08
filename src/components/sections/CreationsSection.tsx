@@ -88,6 +88,14 @@ const CreationsSection = () => {
           status="green"
         />
         <ProjectCard
+          title="🇺🇸 american adventure"
+          description="an exciting adventure game that takes players on a journey through American landscapes and challenges."
+          year=""
+          link="https://s-tune-xqt-git-age-0gdq.spwn.co"
+          linkText="play american adventure"
+          status="green"
+        />
+        <ProjectCard
           title="🎨 bomma.art"
           description="a visual storytelling space that brings character art to life. &quot;bomma&quot; means doll — and this platform brings those figures into modern narratives."
           year=""

@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react'
+import { useTheme } from 'next-themes'
+import FireParticles from './FireParticles'
 
 interface Leaf {
   id: number
@@ -14,10 +16,16 @@ interface Leaf {
 
 const FallAmbience: React.FC = () => {
   const [leaves, setLeaves] = useState<Leaf[]>([])
+  const { theme } = useTheme()
 
   const leafEmojis = {
     maple: '🍁',
     oak: '🍂'
+  }
+
+  // Show fire particles in dark mode, leaves in light mode
+  if (theme === 'dark') {
+    return <FireParticles />
   }
 
   useEffect(() => {

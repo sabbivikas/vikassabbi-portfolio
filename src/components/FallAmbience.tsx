@@ -22,7 +22,7 @@ const FallAmbience: React.FC = () => {
 
   useEffect(() => {
     // Generate beautiful, varied falling autumn leaves
-    const newLeaves: Leaf[] = Array.from({ length: 25 }).map((_, i) => ({
+    const newLeaves: Leaf[] = Array.from({ length: 8 }).map((_, i) => ({
       id: i,
       left: Math.random() * 100,
       duration: 12 + Math.random() * 18, // 12-30 seconds for gentle fall

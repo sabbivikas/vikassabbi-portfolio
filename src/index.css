@@ -233,14 +233,27 @@
   animation: gentle-bounce 2s ease-in-out infinite;
 }
 
-/* Falling leaves animation */
+/* Beautiful falling leaves animation */
+.falling-leaf-container {
+  animation: leafFall var(--duration, 15s) linear infinite;
+  top: -100px;
+}
+
 .falling-leaf {
-  animation: leafFall linear infinite, leafSway 3s ease-in-out infinite;
+  animation: 
+    leafRotate var(--rotation-speed, 2s) linear infinite,
+    leafSway 4s ease-in-out infinite,
+    leafTwirl 6s ease-in-out infinite;
+  display: inline-block;
+  transform-origin: center;
 }
 
 @keyframes leafFall {
-  to {
-    transform: translateY(calc(100vh + 50px)) rotate(720deg);
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(calc(100vh + 200px)) rotate(360deg);
   }
 }
 
@@ -249,9 +262,27 @@
     transform: translateX(0);
   }
   25% {
-    transform: translateX(20px);
+    transform: translateX(var(--sway, 30px));
   }
   75% {
-    transform: translateX(-20px);
+    transform: translateX(calc(var(--sway, 30px) * -1));
+  }
+}
+
+@keyframes leafRotate {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes leafTwirl {
+  0%, 100% {
+    transform: rotateY(0deg) scale(1);
+  }
+  50% {
+    transform: rotateY(180deg) scale(0.8);
   }
 }

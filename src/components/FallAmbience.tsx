@@ -2,13 +2,15 @@ import React, { useEffect, useState } from 'react'
 import { useTheme } from 'next-themes'
 
 interface Leaf {
+  id: number
   left: number
   duration: number
   delay: number
-  type: 'maple' | 'oak' | 'birch'
-  color: string
+  type: 'maple' | 'oak' | 'birch' | 'elm'
   size: number
-  rotation: number
+  rotationSpeed: number
+  swayIntensity: number
+  opacity: number
 }
 
 const FallAmbience: React.FC = () => {
@@ -18,31 +20,24 @@ const FallAmbience: React.FC = () => {
   const leafEmojis = {
     maple: '🍁',
     oak: '🍂', 
-    birch: '🍃'
+    birch: '🍃',
+    elm: '🌿'
   }
-
-  const fallColors = [
-    '#D2691E', // saddle brown
-    '#CD853F', // peru
-    '#DAA520', // goldenrod
-    '#B22222', // fire brick
-    '#228B22', // forest green
-    '#FF8C00', // dark orange
-    '#DC143C', // crimson
-  ]
 
   useEffect(() => {
     if (theme !== 'fall') return
     
-    // Generate beautiful falling leaves
-    const newLeaves: Leaf[] = Array.from({ length: 20 }).map(() => ({
+    // Generate beautiful, varied falling leaves
+    const newLeaves: Leaf[] = Array.from({ length: 30 }).map((_, i) => ({
+      id: i,
       left: Math.random() * 100,
-      duration: 8 + Math.random() * 12, // 8-20 seconds for gentle fall
-      delay: Math.random() * 10,
-      type: ['maple', 'oak', 'birch'][Math.floor(Math.random() * 3)] as 'maple' | 'oak' | 'birch',
-      color: fallColors[Math.floor(Math.random() * fallColors.length)],
-      size: 0.8 + Math.random() * 0.8, // 0.8-1.6x size
-      rotation: Math.random() * 360
+      duration: 12 + Math.random() * 20, // 12-32 seconds for very gentle fall
+      delay: Math.random() * 15,
+      type: ['maple', 'oak', 'birch', 'elm'][Math.floor(Math.random() * 4)] as any,
+      size: 0.6 + Math.random() * 1.2, // 0.6-1.8x size variation
+      rotationSpeed: 0.5 + Math.random() * 2, // varied rotation speeds
+      swayIntensity: 20 + Math.random() * 40, // 20-60px sway
+      opacity: 0.4 + Math.random() * 0.6 // 0.4-1.0 opacity
     }))
     setLeaves(newLeaves)
   }, [theme])
@@ -51,21 +46,30 @@ const FallAmbience: React.FC = () => {
 
   return (
     <div className="pointer-events-none fixed inset-0 z-10 overflow-hidden">
-      {leaves.map((leaf, i) => (
-        <span
-          key={i}
-          className="falling-leaf absolute text-2xl opacity-80"
+      {leaves.map((leaf) => (
+        <div
+          key={leaf.id}
+          className="falling-leaf-container absolute"
           style={{
             left: `${leaf.left}%`,
-            animationDuration: `${leaf.duration}s`,
+            '--duration': `${leaf.duration}s`,
+            '--delay': `${leaf.delay}s`,
+            '--sway': `${leaf.swayIntensity}px`,
+            '--rotation-speed': `${leaf.rotationSpeed}s`,
             animationDelay: `${leaf.delay}s`,
-            color: leaf.color,
-            fontSize: `${leaf.size}rem`,
-            transform: `rotate(${leaf.rotation}deg)`,
-          }}
+          } as React.CSSProperties}
         >
-          {leafEmojis[leaf.type]}
-        </span>
+          <span
+            className="falling-leaf text-3xl"
+            style={{
+              fontSize: `${leaf.size}rem`,
+              opacity: leaf.opacity,
+              filter: `hue-rotate(${Math.random() * 60 - 30}deg) brightness(${0.8 + Math.random() * 0.4})`,
+            }}
+          >
+            {leafEmojis[leaf.type]}
+          </span>
+        </div>
       ))}
     </div>
   )

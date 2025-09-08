@@ -232,3 +232,26 @@
 .animate-gentle-bounce {
   animation: gentle-bounce 2s ease-in-out infinite;
 }
+
+/* Falling leaves animation */
+.falling-leaf {
+  animation: leafFall linear infinite, leafSway 3s ease-in-out infinite;
+}
+
+@keyframes leafFall {
+  to {
+    transform: translateY(calc(100vh + 50px)) rotate(720deg);
+  }
+}
+
+@keyframes leafSway {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(20px);
+  }
+  75% {
+    transform: translateX(-20px);
+  }
+}

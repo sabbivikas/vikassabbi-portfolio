@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import TypewriterGame from './TypewriterGame';
-import { Terminal, User, Briefcase, Award, MessageSquare, Mail, Moon, Sun, CloudRain, Leaf } from 'lucide-react';
+import { Terminal, User, Briefcase, Award, MessageSquare, Mail, Moon, Sun, CloudRain } from 'lucide-react';
 import { useTheme } from 'next-themes';
 
 interface HeaderProps {
@@ -25,8 +25,6 @@ const Header: React.FC<HeaderProps> = ({ className }) => {
 
   const toggleTheme = () => {
     if (theme === 'light') {
-      setTheme('fall');
-    } else if (theme === 'fall') {
       setTheme('rain');
     } else if (theme === 'rain') {
       setTheme('dark');
@@ -39,8 +37,6 @@ const Header: React.FC<HeaderProps> = ({ className }) => {
     if (!mounted) return <Sun className={`${iconClass} group-hover:text-primary relative z-10`} />;
     
     switch(theme) {
-      case 'fall':
-        return <Leaf className={`${iconClass} group-hover:text-primary relative z-10 text-orange-500`} />;
       case 'rain':
         return <CloudRain className={`${iconClass} group-hover:text-primary relative z-10`} />;
       case 'dark':

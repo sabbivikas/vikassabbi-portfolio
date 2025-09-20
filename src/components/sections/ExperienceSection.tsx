@@ -12,6 +12,16 @@ const ExperienceSection = () => {
             <div className="flex items-center gap-2">
               <h3 className="text-xl font-medium mb-1">founder</h3>
             </div>
+            <p className="text-muted-foreground">makesomethingwonderful.co · present</p>
+          </div>
+        </li>
+
+        <li className="relative">
+          <span className="absolute -left-3 top-1 w-2 h-2 rounded-full bg-green-500 animate-status-pulse" />
+          <div className="group">
+            <div className="flex items-center gap-2">
+              <h3 className="text-xl font-medium mb-1">founder</h3>
+            </div>
             <p className="text-muted-foreground">chatrasahaya.org · 2020 – present</p>
           </div>
         </li>

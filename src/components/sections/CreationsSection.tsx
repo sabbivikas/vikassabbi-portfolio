@@ -8,6 +8,14 @@ const CreationsSection = () => {
     <Section id="work" title="🛠 creations">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <ProjectCard
+          title="🌟 aura"
+          description="an emotional companion app that provides personalized support and guidance for mental wellness. available exclusively on ios."
+          year=""
+          link="https://apps.apple.com/us/app/aura-emotional-companion/id6752574726"
+          linkText="download on app store"
+          status="green"
+        />
+        <ProjectCard
           title="📝 noto.my"
           description="a smart writing platform where you can write or dictate your thoughts, enhance them with ai, and research directly within your content. just select any word, sentence, or paragraph and dive deeper without ever leaving your flow."
           year=""

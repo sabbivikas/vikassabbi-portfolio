@@ -1,7 +1,6 @@
 
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Header from '@/components/Header';
-import IntroAnimation from '@/components/IntroAnimation';
 import { useIsMobile } from '@/hooks/use-mobile';
 
 // Import section components
@@ -18,30 +17,13 @@ import ReadingProgress from '@/components/ReadingProgress';
 import FallAmbience from '@/components/FallAmbience';
 
 const Index = () => {
-  const [showIntro, setShowIntro] = useState(true);
-  const [contentVisible, setContentVisible] = useState(false);
   const isMobile = useIsMobile();
-
-  useEffect(() => {
-    const hasSeenIntro = sessionStorage.getItem('hasSeenIntro');
-    if (hasSeenIntro) {
-      setShowIntro(false);
-      setContentVisible(true);
-    }
-  }, []);
-
-  const handleIntroComplete = () => {
-    setShowIntro(false);
-    setContentVisible(true);
-    sessionStorage.setItem('hasSeenIntro', 'true');
-  };
 
   return (
     <>
       <ReadingProgress />
-      {showIntro && <IntroAnimation onComplete={handleIntroComplete} />}
       
-      <div className={`max-w-5xl mx-auto px-6 ${contentVisible ? 'opacity-100 transition-opacity duration-1000' : 'opacity-0'}`}>
+      <div className="max-w-5xl mx-auto px-6">
         <Header />
         <FallAmbience />
         

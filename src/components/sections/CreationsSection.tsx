@@ -24,6 +24,14 @@ const CreationsSection = () => {
           status="green"
         />
         <ProjectCard
+          title="✍️ vibewriters.com"
+          description="a creative writing community where writers connect, share their work, and find their unique voice."
+          year=""
+          link="https://vibewriters.com/"
+          linkText="visit vibewriters"
+          status="green"
+        />
+        <ProjectCard
           title="💌 walluv.com"
           description="a love-letter website where users can anonymously express their feelings to the world — no logins, just pure expression."
           year=""

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useTheme } from 'next-themes'
 import ChristmasDecorations from './ChristmasDecorations'
+import StringLights from './StringLights'
 import RainAmbience from './RainAmbience'
 
 interface Leaf {
@@ -58,7 +59,12 @@ const FallAmbience: React.FC = () => {
 
   // Show different effects based on theme
   if (theme === 'dark') {
-    return <ChristmasDecorations />
+    return (
+      <>
+        <ChristmasDecorations />
+        <StringLights />
+      </>
+    )
   }
   
   if (theme === 'rain') {

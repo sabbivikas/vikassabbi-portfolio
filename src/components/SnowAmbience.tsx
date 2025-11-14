@@ -16,21 +16,19 @@ const SnowAmbience: React.FC = () => {
   const { theme } = useTheme()
 
   useEffect(() => {
-    if (theme === 'light' || theme === 'fall') {
-      const newSnowflakes: Snowflake[] = Array.from({ length: 15 }).map((_, i) => ({
-        id: i,
-        left: Math.random() * 100,
-        duration: 8 + Math.random() * 12,
-        delay: Math.random() * 10,
-        size: 0.6 + Math.random() * 0.8,
-        opacity: 0.4 + Math.random() * 0.6,
-        drift: 20 + Math.random() * 40,
-      }))
-      setSnowflakes(newSnowflakes)
-    }
+    const newSnowflakes: Snowflake[] = Array.from({ length: 15 }).map((_, i) => ({
+      id: i,
+      left: Math.random() * 100,
+      duration: 18 + Math.random() * 16,
+      delay: Math.random() * 15,
+      size: 0.6 + Math.random() * 0.8,
+      opacity: 0.3 + Math.random() * 0.5,
+      drift: 15 + Math.random() * 25,
+    }))
+    setSnowflakes(newSnowflakes)
   }, [theme])
 
-  if (theme !== 'light' && theme !== 'fall') return null
+  if (theme === 'rain') return null
 
   return (
     <div className="pointer-events-none fixed inset-0 z-10 overflow-hidden">

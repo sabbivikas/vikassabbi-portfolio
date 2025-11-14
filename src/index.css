@@ -387,12 +387,12 @@
 
 @keyframes lightTwinkle {
   0%, 100% {
-    opacity: 1;
-    filter: brightness(1) drop-shadow(0 0 8px var(--light-color));
+    opacity: 0.9;
+    filter: brightness(1) drop-shadow(0 0 3px var(--light-color));
   }
   50% {
-    opacity: 0.3;
-    filter: brightness(0.6) drop-shadow(0 0 2px var(--light-color));
+    opacity: 0.4;
+    filter: brightness(0.7) drop-shadow(0 0 1px var(--light-color));
   }
 }
 

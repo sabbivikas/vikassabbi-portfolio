@@ -59,12 +59,7 @@ const FallAmbience: React.FC = () => {
 
   // Show different effects based on theme
   if (theme === 'dark') {
-    return (
-      <>
-        <ChristmasDecorations />
-        <StringLights />
-      </>
-    )
+    return <StringLights />
   }
   
   if (theme === 'rain') {

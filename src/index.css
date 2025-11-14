@@ -339,3 +339,48 @@
     transform: translateX(-15px);
   }
 }
+
+/* Beautiful Christmas decorations animation */
+.christmas-decoration {
+  animation: 
+    christmasSway var(--duration, 4s) ease-in-out infinite,
+    christmasGlow 2s ease-in-out infinite;
+}
+
+.decoration-emoji {
+  display: inline-block;
+  animation: christmasRotate calc(var(--duration, 4s) * 2) ease-in-out infinite;
+}
+
+@keyframes christmasSway {
+  0%, 100% {
+    transform: translateX(0) translateY(0);
+  }
+  25% {
+    transform: translateX(var(--sway, 15px)) translateY(-10px);
+  }
+  75% {
+    transform: translateX(calc(var(--sway, 15px) * -1)) translateY(10px);
+  }
+}
+
+@keyframes christmasGlow {
+  0%, 100% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.3);
+  }
+}
+
+@keyframes christmasRotate {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+}

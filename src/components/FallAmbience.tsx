@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import { useTheme } from 'next-themes'
 import ChristmasDecorations from './ChristmasDecorations'
 import RainAmbience from './RainAmbience'
-import SnowAmbience from './SnowAmbience'
 
 interface Leaf {
   id: number
@@ -39,8 +38,8 @@ const FallAmbience: React.FC = () => {
   ]
 
   useEffect(() => {
-    // Only generate leaves for fall theme
-    if (theme === 'fall') {
+    // Only generate leaves for light/fall themes
+    if (theme === 'light' || theme === 'fall') {
       const newLeaves: Leaf[] = Array.from({ length: 8 }).map((_, i) => ({
         id: i,
         left: Math.random() * 100,
@@ -64,10 +63,6 @@ const FallAmbience: React.FC = () => {
   
   if (theme === 'rain') {
     return <RainAmbience />
-  }
-
-  if (theme === 'light') {
-    return <SnowAmbience />
   }
 
   return (

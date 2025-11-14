@@ -44,6 +44,12 @@ const StringLights: React.FC = () => {
 
   return (
     <div className="pointer-events-none fixed inset-0 z-20">
+      {/* Wire/string elements */}
+      <div className="absolute top-2 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-muted-foreground/20 to-transparent" />
+      <div className="absolute bottom-2 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-muted-foreground/20 to-transparent" />
+      <div className="absolute left-2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-transparent via-muted-foreground/20 to-transparent" />
+      <div className="absolute right-2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-transparent via-muted-foreground/20 to-transparent" />
+      
       {/* Top border lights */}
       <div className="absolute top-0 left-0 right-0 h-8">
         {lights.top.map((light) => (

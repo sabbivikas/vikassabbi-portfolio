@@ -19,11 +19,11 @@ export default {
 			}
 		},
 		extend: {
-			fontFamily: {
-				sans: ['"Times New Roman"', 'Times', '"Liberation Serif"', 'serif'],
-				display: ['"Times New Roman"', 'Times', '"Liberation Serif"', 'serif'],
-				text: ['"Times New Roman"', 'Times', '"Liberation Serif"', 'serif'],
-			},
+		fontFamily: {
+			sans: ['Howdybun', 'Times', 'serif'],
+			display: ['Howdybun', 'Times', 'serif'],
+			text: ['Howdybun', 'Times', 'serif'],
+		},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',

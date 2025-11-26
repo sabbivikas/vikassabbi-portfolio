@@ -111,7 +111,7 @@
   }
   body {
     @apply bg-background text-foreground transition-colors duration-200;
-    font-family: "Times New Roman", Times, "Liberation Serif", serif;
+    font-family: "Howdybun", "Times New Roman", Times, "Liberation Serif", serif;
     font-weight: 400;
     line-height: 1.6;
     letter-spacing: 0.01em;
@@ -121,7 +121,7 @@
     -moz-osx-font-smoothing: grayscale;
   }
   h1, h2, h3, h4, h5, h6 {
-    font-family: "Times New Roman", Times, "Liberation Serif", serif;
+    font-family: "Howdybun", "Times New Roman", Times, "Liberation Serif", serif;
     font-weight: 700;
     letter-spacing: 0.005em;
     line-height: 1.2;
@@ -129,7 +129,7 @@
     font-feature-settings: "kern" 1, "liga" 1;
   }
   p, a, span, div, button, input, textarea, select, li {
-    font-family: "Times New Roman", Times, "Liberation Serif", serif;
+    font-family: "Howdybun", "Times New Roman", Times, "Liberation Serif", serif;
     font-weight: 400;
     letter-spacing: 0.01em;
     text-transform: lowercase;

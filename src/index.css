@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: 'Howdybun';
-  src: url('/fonts/Howdybun.otf') format('opentype');
+  src: url('./assets/fonts/Howdybun.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;

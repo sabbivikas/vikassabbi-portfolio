@@ -18,24 +18,24 @@ const StringLights: React.FC = () => {
   })
   const { theme } = useTheme()
 
-  const colors = ['#FFD700', '#FF4444', '#44FF44', '#4444FF', '#FFAA00', '#FF88FF']
+  const colors = ['#FFE6A0', '#FFFACD', '#FFF8DC', '#FFD700']
 
   useEffect(() => {
     if (theme === 'dark') {
       const createLights = (count: number) => 
         Array.from({ length: count }).map((_, i) => ({
           id: i,
-          position: (i / (count - 1)) * 100,
+          position: 8 + (i / (count - 1)) * 84, // Keep lights within 8-92% range
           color: colors[Math.floor(Math.random() * colors.length)],
-          delay: Math.random() * 3,
-          duration: 1.5 + Math.random() * 1.5
+          delay: Math.random() * 4,
+          duration: 2 + Math.random() * 2
         }))
 
       setLights({
-        top: createLights(20),
-        bottom: createLights(20),
-        left: createLights(15),
-        right: createLights(15)
+        top: createLights(8),
+        bottom: createLights(8),
+        left: createLights(6),
+        right: createLights(6)
       })
     }
   }, [theme])
@@ -44,11 +44,11 @@ const StringLights: React.FC = () => {
 
   return (
     <div className="pointer-events-none fixed inset-0 z-20">
-      {/* Wire/string elements */}
-      <div className="absolute top-3 left-0 right-0 h-px bg-muted-foreground/10" />
-      <div className="absolute bottom-3 left-0 right-0 h-px bg-muted-foreground/10" />
-      <div className="absolute left-3 top-0 bottom-0 w-px bg-muted-foreground/10" />
-      <div className="absolute right-3 top-0 bottom-0 w-px bg-muted-foreground/10" />
+      {/* Wire/string elements - more subtle */}
+      <div className="absolute top-4 left-0 right-0 h-px bg-muted-foreground/5" />
+      <div className="absolute bottom-4 left-0 right-0 h-px bg-muted-foreground/5" />
+      <div className="absolute left-4 top-0 bottom-0 w-px bg-muted-foreground/5" />
+      <div className="absolute right-4 top-0 bottom-0 w-px bg-muted-foreground/5" />
       
       {/* Top border lights */}
       <div className="absolute top-0 left-0 right-0 h-8">
@@ -70,7 +70,7 @@ const StringLights: React.FC = () => {
                 animationDelay: `${light.delay}s`
               } as React.CSSProperties}
             >
-              <div className="w-1.5 h-2 rounded-full" style={{ backgroundColor: light.color }} />
+              <div className="w-1 h-1.5 rounded-full" style={{ backgroundColor: light.color }} />
             </div>
           </div>
         ))}
@@ -96,7 +96,7 @@ const StringLights: React.FC = () => {
                 animationDelay: `${light.delay}s`
               } as React.CSSProperties}
             >
-              <div className="w-1.5 h-2 rounded-full" style={{ backgroundColor: light.color }} />
+              <div className="w-1 h-1.5 rounded-full" style={{ backgroundColor: light.color }} />
             </div>
           </div>
         ))}
@@ -122,7 +122,7 @@ const StringLights: React.FC = () => {
                 animationDelay: `${light.delay}s`
               } as React.CSSProperties}
             >
-              <div className="w-1.5 h-2 rounded-full" style={{ backgroundColor: light.color }} />
+              <div className="w-1 h-1.5 rounded-full" style={{ backgroundColor: light.color }} />
             </div>
           </div>
         ))}
@@ -148,7 +148,7 @@ const StringLights: React.FC = () => {
                 animationDelay: `${light.delay}s`
               } as React.CSSProperties}
             >
-              <div className="w-1.5 h-2 rounded-full" style={{ backgroundColor: light.color }} />
+              <div className="w-1 h-1.5 rounded-full" style={{ backgroundColor: light.color }} />
             </div>
           </div>
         ))}

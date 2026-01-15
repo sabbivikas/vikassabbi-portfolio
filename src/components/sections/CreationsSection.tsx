@@ -16,6 +16,22 @@ const CreationsSection = () => {
           status="green"
         />
         <ProjectCard
+          title="🔬 org research"
+          description="an intelligent research assistant that helps you explore and understand organizations deeply — from company culture to market positioning."
+          year=""
+          link="https://orgresearch.lovable.app"
+          linkText="visit org research"
+          status="green"
+        />
+        <ProjectCard
+          title="💌 dear me"
+          description="a self-reflection platform where you write letters to your future self — capturing thoughts, dreams, and promises to be delivered when the time is right."
+          year=""
+          link="https://dearme.life"
+          linkText="visit dear me"
+          status="green"
+        />
+        <ProjectCard
           title="📝 noto.my"
           description="a smart writing platform where you can write or dictate your thoughts, enhance them with ai, and research directly within your content. just select any word, sentence, or paragraph and dive deeper without ever leaving your flow."
           year=""

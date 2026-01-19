@@ -32,6 +32,14 @@ const CreationsSection = () => {
           status="green"
         />
         <ProjectCard
+          title="🎤 hireai"
+          description="a real-time ai interviewer that conducts live technical and behavioral interviews, providing instant feedback and assessment to streamline your hiring process."
+          year=""
+          link="https://hireai-real-time-interviewer-761562630822.us-west1.run.app"
+          linkText="try hireai"
+          status="green"
+        />
+        <ProjectCard
           title="📝 noto.my"
           description="a smart writing platform where you can write or dictate your thoughts, enhance them with ai, and research directly within your content. just select any word, sentence, or paragraph and dive deeper without ever leaving your flow."
           year=""

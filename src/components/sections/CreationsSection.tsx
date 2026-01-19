@@ -16,6 +16,14 @@ const CreationsSection = () => {
           status="green"
         />
         <ProjectCard
+          title="🎤 hireai"
+          description="a real-time ai interviewer that conducts live technical and behavioral interviews, providing instant feedback and assessment to streamline your hiring process."
+          year=""
+          link="https://hireai-real-time-interviewer-761562630822.us-west1.run.app"
+          linkText="try hireai"
+          status="green"
+        />
+        <ProjectCard
           title="🔬 org research"
           description="an intelligent research assistant that helps you explore and understand organizations deeply — from company culture to market positioning."
           year=""
@@ -29,14 +37,6 @@ const CreationsSection = () => {
           year=""
           link="https://dearme.life"
           linkText="visit dear me"
-          status="green"
-        />
-        <ProjectCard
-          title="🎤 hireai"
-          description="a real-time ai interviewer that conducts live technical and behavioral interviews, providing instant feedback and assessment to streamline your hiring process."
-          year=""
-          link="https://hireai-real-time-interviewer-761562630822.us-west1.run.app"
-          linkText="try hireai"
           status="green"
         />
         <ProjectCard

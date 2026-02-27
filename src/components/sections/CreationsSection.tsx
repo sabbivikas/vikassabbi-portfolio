@@ -72,14 +72,6 @@ const CreationsSection = () => {
           status="green"
         />
         <ProjectCard
-          title="🎭 doodleverse.space"
-          description="a wildly creative doodle-based game where your imagination leads the way. draw your own heroes, summon creatures, and face off against shadowy forces from the underworld. every doodle is more than a drawing. it's a portal to a universe where your ideas shape the adventure."
-          year=""
-          link="https://doodleverse.space"
-          linkText="visit doodleverse"
-          status="green"
-        />
-        <ProjectCard
           title="🌍 vihari.earth"
           description="a quiet, reflective story platform where one frame sparks a thousand imaginations. each scene in vihari's journey invites you to pause, feel, and write your own meaning. no rules, no right answers, just you, your thoughts, and a story waiting to be discovered within."
           year=""
@@ -88,75 +80,11 @@ const CreationsSection = () => {
           status="green"
         />
         <ProjectCard
-          title="💫 cosmiclovers.space"
-          description="a soulful web game that tells the tale of love reborn in the stars. two humans lose each other in one lifetime, only to be reborn as celestial beings navigating the cosmos. with each step through space, they move closer to reunion proving that true love never fades, it just finds a new sky."
-          year=""
-          link="https://cosmiclovers.space"
-          linkText="visit cosmiclovers"
-          status="green"
-        />
-        <ProjectCard
-          title="🐝 barry's pollination battle"
-          description="a buzzing adventure game where barry the bee fights to save the pollination process and protect nature's delicate ecosystem."
-          year=""
-          link="https://skypatrol.vikassabbi.spwn.co"
-          linkText="play barry's battle"
-          status="green"
-        />
-        <ProjectCard
-          title="🌿 jungle commando"
-          description="an action-packed jungle adventure where commandos navigate through dense forests on tactical missions."
-          year=""
-          link="https://junglecommando.vikassabbi.spwn.co"
-          linkText="play jungle commando"
-          status="green"
-        />
-        <ProjectCard
-          title="🧪 the alchemist"
-          description="a mystical adventure game where players discover the secrets of alchemy and transformation."
-          year=""
-          link="https://www.spawn.co/play/d355e122-b5d4-45f4-8b6f-af30d8e90e00"
-          linkText="play the alchemist"
-          status="green"
-        />
-        <ProjectCard
-          title="📚 the tales of nani"
-          description="an interactive storytelling game featuring a wise grandmother sharing timeless wisdom and values through engaging narratives."
-          year=""
-          link="https://s-axis-d-git-sound-0hrw.spwn.co"
-          linkText="play the tales of nani"
-          status="green"
-        />
-        <ProjectCard
-          title="🇺🇸 american adventure"
-          description="an exciting adventure game that takes players on a journey through American landscapes and challenges."
-          year=""
-          link="https://s-tune-xqt-git-age-0gdq.spwn.co"
-          linkText="play american adventure"
-          status="green"
-        />
-        <ProjectCard
-          title="🎨 bomma.art"
-          description="a visual storytelling space that brings character art to life. &quot;bomma&quot; means doll — and this platform brings those figures into modern narratives."
-          year=""
-          link="https://bomma.art"
-          linkText="visit bomma.art"
-          status="green"
-        />
-        <ProjectCard
           title="🎮 humanity games"
           description="a retro arcade where each game reflects real-world themes — from tech addiction to civic awareness."
           year=""
           link="https://humanity-games.com"
           linkText="visit humanity games"
-          status="green"
-        />
-        <ProjectCard
-          title="🤖 joybot"
-          description="an ai-powered version of a habit-building app designed to support users with healthy daily routines — like steps, food habits, and mindful choices."
-          year=""
-          link="https://joybot-6844.chipp.ai"
-          linkText="talk to joybot"
           status="green"
         />
         <ProjectCard
@@ -174,14 +102,6 @@ const CreationsSection = () => {
           link="https://ammamma.online"
           linkText="visit ammamma"
           status="green"
-        />
-        <ProjectCard
-          title="🧘 myfriendkrishna.com"
-          description="a spiritual companion platform where users can chat with krishna, based on the bhagavad gita."
-          year=""
-          link="https://myfriendkrishna.com"
-          linkText="visit myfriendkrishna"
-          status="yellow"
         />
         <ProjectCard
           title="💸 tip calculator"

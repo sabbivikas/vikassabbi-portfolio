@@ -96,6 +96,14 @@ const CreationsSection = () => {
           status="green"
         />
         <ProjectCard
+          title="🦕 dino initiative"
+          description="a gentle, accessible platform offering free mental health resources and crisis support for anyone who needs a moment of care — no barriers, no judgment."
+          year=""
+          link="https://dinoinitiative.com/"
+          linkText="visit dino initiative"
+          status="green"
+        />
+        <ProjectCard
           title="💸 tip calculator"
           description="built while heading to a dinner where friends struggled to split the tip. i built it that night and sold it to a restaurant the next day. didn't even realize it was the first of its kind in the world.📷 used in real restaurants with qr code access."
           year=""

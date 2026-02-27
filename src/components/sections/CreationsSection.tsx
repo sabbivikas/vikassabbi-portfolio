@@ -80,14 +80,6 @@ const CreationsSection = () => {
           status="green"
         />
         <ProjectCard
-          title="🎮 humanity games"
-          description="a retro arcade where each game reflects real-world themes — from tech addiction to civic awareness."
-          year=""
-          link="https://humanity-games.com"
-          linkText="visit humanity games"
-          status="green"
-        />
-        <ProjectCard
           title="🪔 narad.world"
           description="an avatar storytelling platform to preserve moral stories and family values. built in collaboration with like-minded storytellers."
           year=""

@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import TypewriterGame from './TypewriterGame';
-import { Terminal, User, Briefcase, Award, MessageSquare, Mail, Moon, Sun, CloudRain } from 'lucide-react';
+import { Terminal, User, Briefcase, Award, MessageSquare, Mail, Moon, Sun } from 'lucide-react';
 import { useTheme } from 'next-themes';
 
 interface HeaderProps {

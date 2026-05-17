@@ -35,8 +35,6 @@ const Header: React.FC<HeaderProps> = ({ className }) => {
     if (!mounted) return <Sun className={`${iconClass} group-hover:text-primary relative z-10`} />;
     
     switch(theme) {
-      case 'rain':
-        return <CloudRain className={`${iconClass} group-hover:text-primary relative z-10`} />;
       case 'dark':
         return <Moon className={`${iconClass} group-hover:text-primary relative z-10`} />;
       default:

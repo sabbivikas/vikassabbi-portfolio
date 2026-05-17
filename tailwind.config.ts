@@ -20,9 +20,9 @@ export default {
 		},
 		extend: {
 		fontFamily: {
-			sans: ['Howdybun', 'Times', 'serif'],
-			display: ['Howdybun', 'Times', 'serif'],
-			text: ['Howdybun', 'Times', 'serif'],
+			sans: ['-apple-system', 'BlinkMacSystemFont', '"SF Pro Display"', '"SF Pro Text"', '"Segoe UI"', 'Roboto', '"Helvetica Neue"', 'Arial', 'sans-serif'],
+			display: ['-apple-system', 'BlinkMacSystemFont', '"SF Pro Display"', '"SF Pro Text"', '"Segoe UI"', 'Roboto', '"Helvetica Neue"', 'Arial', 'sans-serif'],
+			text: ['-apple-system', 'BlinkMacSystemFont', '"SF Pro Display"', '"SF Pro Text"', '"Segoe UI"', 'Roboto', '"Helvetica Neue"', 'Arial', 'sans-serif'],
 		},
 			colors: {
 				border: 'hsl(var(--border))',

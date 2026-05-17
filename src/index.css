@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
 
-@font-face {
-  font-family: 'Howdybun';
-  src: url('./assets/fonts/Howdybun.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -111,29 +103,27 @@
   }
   body {
     @apply bg-background text-foreground transition-colors duration-200;
-    font-family: "Howdybun", "Times New Roman", Times, "Liberation Serif", serif;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-weight: 400;
     line-height: 1.6;
-    letter-spacing: 0.01em;
-    text-transform: lowercase;
-    font-feature-settings: "kern" 1, "liga" 1;
+    letter-spacing: -0.01em;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
   h1, h2, h3, h4, h5, h6 {
-    font-family: "Howdybun", "Times New Roman", Times, "Liberation Serif", serif;
-    font-weight: 700;
-    letter-spacing: 0.005em;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.02em;
     line-height: 1.2;
-    text-transform: lowercase;
-    font-feature-settings: "kern" 1, "liga" 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
   p, a, span, div, button, input, textarea, select, li {
-    font-family: "Howdybun", "Times New Roman", Times, "Liberation Serif", serif;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-weight: 400;
-    letter-spacing: 0.01em;
-    text-transform: lowercase;
-    font-feature-settings: "kern" 1, "liga" 1;
+    letter-spacing: -0.01em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
   a {
     @apply transition-colors duration-200;

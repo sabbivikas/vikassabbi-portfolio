@@ -18,7 +18,6 @@ import FallAmbience from '@/components/FallAmbience';
 
 const Index = () => {
   const isMobile = useIsMobile();
-  const { weatherData, loading } = useWeatherTheme(true);
 
   return (
     <>

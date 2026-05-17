@@ -25,8 +25,6 @@ const Header: React.FC<HeaderProps> = ({ className }) => {
 
   const toggleTheme = () => {
     if (theme === 'light') {
-      setTheme('rain');
-    } else if (theme === 'rain') {
       setTheme('dark');
     } else {
       setTheme('light');

@@ -23,7 +23,7 @@ const IntroAnimation: React.FC<IntroAnimationProps> = ({
   ];
   
 // Safety timer to prevent the animation from getting stuck
-  const safetyTimerRef = useRef<NodeJS.Timeout | null>(null);
+  const safetyTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const completionRef = useRef<boolean>(false);
 
   const complete = () => {

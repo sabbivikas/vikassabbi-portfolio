@@ -2,7 +2,6 @@
 import React from 'react';
 import Header from '@/components/Header';
 import { useIsMobile } from '@/hooks/use-mobile';
-import { useWeatherTheme } from '@/hooks/useWeatherTheme';
 
 // Import section components
 import ProfileHeader from '@/components/sections/ProfileHeader';

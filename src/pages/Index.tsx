@@ -14,7 +14,7 @@ import MediaSection from '@/components/sections/MediaSection';
 import PhilosophySection from '@/components/sections/PhilosophySection';
 import Footer from '@/components/sections/Footer';
 import ReadingProgress from '@/components/ReadingProgress';
-import FallAmbience from '@/components/FallAmbience';
+
 
 const Index = () => {
   const isMobile = useIsMobile();

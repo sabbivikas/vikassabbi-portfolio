@@ -14,7 +14,7 @@ import MediaSection from '@/components/sections/MediaSection';
 import PhilosophySection from '@/components/sections/PhilosophySection';
 import Footer from '@/components/sections/Footer';
 import ReadingProgress from '@/components/ReadingProgress';
-import FallAmbience from '@/components/FallAmbience';
+
 
 const Index = () => {
   const isMobile = useIsMobile();
@@ -25,7 +25,6 @@ const Index = () => {
       
       <div className="max-w-5xl mx-auto px-6">
         <Header />
-        <FallAmbience />
         
         <main className="py-12 lowercase">
           <ProfileHeader />

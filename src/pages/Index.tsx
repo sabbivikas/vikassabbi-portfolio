@@ -25,7 +25,6 @@ const Index = () => {
       
       <div className="max-w-5xl mx-auto px-6">
         <Header />
-        <FallAmbience />
         
         <main className="py-12 lowercase">
           <ProfileHeader />

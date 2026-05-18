@@ -159,11 +159,6 @@
     animation-delay: calc(var(--index) * 120ms);
   }
   
-  .rain .raindrop {
-    @apply absolute bg-primary/20 rounded-full;
-    animation: rain 1.5s ease-in-out infinite;
-    animation-delay: calc(var(--delay) * 0.5s);
-  }
 }
 
 @keyframes float {

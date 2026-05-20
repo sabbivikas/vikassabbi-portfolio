@@ -9,7 +9,7 @@ const CreationsSection = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <ProjectCard
           title="🦕 dino initiative"
-          description="a gentle, accessible platform offering free mental health resources and crisis support for anyone who needs a moment of care — no barriers, no judgment. available on ios."
+          description="a gentle, accessible platform offering free mental health resources and crisis support for anyone who needs a moment of care — no barriers, no judgment. backed by one of the largest mental health communities online: 258k instagram followers, 94k tiktok. available on ios."
           year=""
           link="https://apps.apple.com/us/app/dino-initiative/id6763940737"
           linkText="download on app store"

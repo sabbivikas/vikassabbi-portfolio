@@ -6,6 +6,15 @@ const ExperienceSection = () => {
   return (
     <Section id="experience" title="💼 experience">
       <ol className="relative border-l border-muted-foreground/20 pl-6 space-y-8">
+        <li className="relative">
+          <span className="absolute -left-3 top-1 w-2 h-2 rounded-full bg-green-500 animate-status-pulse" />
+          <div>
+            <div className="flex items-center gap-2">
+              <h3 className="text-xl font-medium mb-1">product engineer</h3>
+            </div>
+            <p className="text-muted-foreground">woz (yc w25) · feb 2025 – present</p>
+          </div>
+        </li>
 
         <li className="relative">
           <span className="absolute -left-3 top-1 w-2 h-2 rounded-full bg-green-500 animate-status-pulse" />
@@ -27,15 +36,6 @@ const ExperienceSection = () => {
           </div>
         </li>
 
-        <li className="relative">
-          <span className="absolute -left-3 top-1 w-2 h-2 rounded-full bg-green-500 animate-status-pulse" />
-          <div>
-            <div className="flex items-center gap-2">
-              <h3 className="text-xl font-medium mb-1">product engineer</h3>
-            </div>
-            <p className="text-muted-foreground">woz (yc w25) · feb 2025 – present</p>
-          </div>
-        </li>
 
         <li className="relative">
           <span className="absolute -left-3 top-1 w-2 h-2 rounded-full bg-red-500 animate-status-pulse" />

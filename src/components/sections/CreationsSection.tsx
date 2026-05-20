@@ -27,7 +27,7 @@ const CreationsSection = () => {
           title="🎤 hireai"
           description="a real-time ai interviewer that conducts live technical and behavioral interviews, providing instant feedback and assessment to streamline your hiring process."
           year=""
-          link="https://ai-hr-real-time-interviewer-761562630822.us-west1.run.app"
+          link="https://ai-hr-real-time-interviewer-78048118432.us-east1.run.app"
           linkText="try hireai"
           status="green"
         />

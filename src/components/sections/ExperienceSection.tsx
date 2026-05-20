@@ -16,6 +16,7 @@ const ExperienceSection = () => {
           </div>
         </li>
 
+        <li className="relative">
           <span className="absolute -left-3 top-1 w-2 h-2 rounded-full bg-green-500 animate-status-pulse" />
           <div className="group">
             <div className="flex items-center gap-2">

@@ -97,10 +97,10 @@ const CreationsSection = () => {
         />
         <ProjectCard
           title="🦕 dino initiative"
-          description="a gentle, accessible platform offering free mental health resources and crisis support for anyone who needs a moment of care — no barriers, no judgment."
+          description="a gentle, accessible platform offering free mental health resources and crisis support for anyone who needs a moment of care — no barriers, no judgment. available on ios."
           year=""
-          link="https://dinoinitiative.com/"
-          linkText="visit dino initiative"
+          link="https://apps.apple.com/us/app/dino-initiative/id6763940737"
+          linkText="download on app store"
           status="green"
         />
         <ProjectCard

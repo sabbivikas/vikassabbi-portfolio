@@ -8,6 +8,14 @@ const CreationsSection = () => {
     <Section id="work" title="🛠 creations">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <ProjectCard
+          title="🦕 dino initiative"
+          description="a gentle, accessible platform offering free mental health resources and crisis support for anyone who needs a moment of care — no barriers, no judgment. available on ios."
+          year=""
+          link="https://apps.apple.com/us/app/dino-initiative/id6763940737"
+          linkText="download on app store"
+          status="green"
+        />
+        <ProjectCard
           title="🌟 aura"
           description="an emotional companion app that provides personalized support and guidance for mental wellness. available exclusively on ios."
           year=""
@@ -53,14 +61,6 @@ const CreationsSection = () => {
           year=""
           link="https://ammamma.online"
           linkText="visit ammamma"
-          status="green"
-        />
-        <ProjectCard
-          title="🦕 dino initiative"
-          description="a gentle, accessible platform offering free mental health resources and crisis support for anyone who needs a moment of care — no barriers, no judgment. available on ios."
-          year=""
-          link="https://apps.apple.com/us/app/dino-initiative/id6763940737"
-          linkText="download on app store"
           status="green"
         />
         <ProjectCard

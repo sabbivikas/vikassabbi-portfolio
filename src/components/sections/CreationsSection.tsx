@@ -40,14 +40,6 @@ const CreationsSection = () => {
           status="green"
         />
         <ProjectCard
-          title="📝 noto.my"
-          description="a smart writing platform where you can write or dictate your thoughts, enhance them with ai, and research directly within your content. just select any word, sentence, or paragraph and dive deeper without ever leaving your flow."
-          year=""
-          link="https://noto.my"
-          linkText="visit noto"
-          status="green"
-        />
-        <ProjectCard
           title="🌍 vihari.earth"
           description="a quiet, reflective story platform where one frame sparks a thousand imaginations. each scene in vihari's journey invites you to pause, feel, and write your own meaning. no rules, no right answers, just you, your thoughts, and a story waiting to be discovered within."
           year=""

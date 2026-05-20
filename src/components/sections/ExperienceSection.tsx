@@ -30,9 +30,29 @@ const ExperienceSection = () => {
           <span className="absolute -left-3 top-1 w-2 h-2 rounded-full bg-red-500 animate-status-pulse" />
           <div>
             <div className="flex items-center gap-2">
+              <h3 className="text-xl font-medium mb-1">app creator</h3>
+            </div>
+            <p className="text-muted-foreground">wabi · oct 2025 – dec 2025</p>
+          </div>
+        </li>
+
+        <li className="relative">
+          <span className="absolute -left-3 top-1 w-2 h-2 rounded-full bg-red-500 animate-status-pulse" />
+          <div>
+            <div className="flex items-center gap-2">
+              <h3 className="text-xl font-medium mb-1">founder in residence</h3>
+            </div>
+            <p className="text-muted-foreground">the residency sf · oct 2025 – nov 2025</p>
+          </div>
+        </li>
+
+        <li className="relative">
+          <span className="absolute -left-3 top-1 w-2 h-2 rounded-full bg-red-500 animate-status-pulse" />
+          <div>
+            <div className="flex items-center gap-2">
               <h3 className="text-xl font-medium mb-1">associate product manager</h3>
             </div>
-            <p className="text-muted-foreground">spawn · july 2024 – sept 2024</p>
+            <p className="text-muted-foreground">spawn · july 2025 – sept 2025</p>
           </div>
         </li>
 

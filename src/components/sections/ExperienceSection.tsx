@@ -71,7 +71,7 @@ const ExperienceSection = () => {
           <span className="absolute -left-3 top-1 w-2 h-2 rounded-full bg-red-500 animate-status-pulse" />
           <div>
             <div className="flex items-center gap-2">
-              <h3 className="text-xl font-medium mb-1">project manager</h3>
+              <h3 className="text-xl font-medium mb-1">product ops</h3>
             </div>
             <p className="text-muted-foreground">betteryou · jan 2024 – july 2025</p>
           </div>

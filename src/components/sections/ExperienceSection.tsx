@@ -27,12 +27,12 @@ const ExperienceSection = () => {
         </li>
 
         <li className="relative">
-          <span className="absolute -left-3 top-1 w-2 h-2 rounded-full bg-green-500 animate-status-pulse" />
+          <span className="absolute -left-3 top-1 w-2 h-2 rounded-full bg-red-500 animate-status-pulse" />
           <div>
             <div className="flex items-center gap-2">
               <h3 className="text-xl font-medium mb-1">associate product manager</h3>
             </div>
-            <p className="text-muted-foreground">spawn · july 2025 – present</p>
+            <p className="text-muted-foreground">spawn · july 2024 – sept 2024</p>
           </div>
         </li>
 

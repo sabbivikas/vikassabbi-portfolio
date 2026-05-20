@@ -32,14 +32,6 @@ const CreationsSection = () => {
           status="green"
         />
         <ProjectCard
-          title="💌 dear me"
-          description="a self-reflection platform where you write letters to your future self — capturing thoughts, dreams, and promises to be delivered when the time is right."
-          year=""
-          link="https://dearme.life"
-          linkText="visit dear me"
-          status="green"
-        />
-        <ProjectCard
           title="📝 noto.my"
           description="a smart writing platform where you can write or dictate your thoughts, enhance them with ai, and research directly within your content. just select any word, sentence, or paragraph and dive deeper without ever leaving your flow."
           year=""
@@ -48,43 +40,11 @@ const CreationsSection = () => {
           status="green"
         />
         <ProjectCard
-          title="✍️ vibewriters.com"
-          description="a creative writing community where writers connect, share their work, and find their unique voice."
-          year=""
-          link="https://vibewriters.com/"
-          linkText="visit vibewriters"
-          status="green"
-        />
-        <ProjectCard
-          title="💌 walluv.com"
-          description="a love-letter website where users can anonymously express their feelings to the world — no logins, just pure expression."
-          year=""
-          link="https://walluv.com"
-          linkText="visit walluv"
-          status="green"
-        />
-        <ProjectCard
-          title="✍️ freewrite.space"
-          description="a quiet corner of the internet to clear your mind and let your thoughts flow. no distractions, just a timer, a blank space, and you."
-          year=""
-          link="https://freewrite.space"
-          linkText="visit freewrite"
-          status="green"
-        />
-        <ProjectCard
           title="🌍 vihari.earth"
           description="a quiet, reflective story platform where one frame sparks a thousand imaginations. each scene in vihari's journey invites you to pause, feel, and write your own meaning. no rules, no right answers, just you, your thoughts, and a story waiting to be discovered within."
           year=""
           link="https://vihari.earth"
           linkText="visit vihari.earth"
-          status="green"
-        />
-        <ProjectCard
-          title="🪔 narad.world"
-          description="an avatar storytelling platform to preserve moral stories and family values. built in collaboration with like-minded storytellers."
-          year=""
-          link="https://narad.world"
-          linkText="visit narad.world"
           status="green"
         />
         <ProjectCard

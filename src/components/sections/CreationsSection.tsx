@@ -16,6 +16,14 @@ const CreationsSection = () => {
           status="green"
         />
         <ProjectCard
+          title="🦆 tryducky"
+          description="built a cross-platform peer-to-peer messaging system where the delivery mechanism is a full-screen animation — a new interaction between friends on desktop. messages are encrypted in transit, hard-deleted on delivery, and the sender gets a real-time delivery confirmation when the duck lands."
+          year=""
+          link="https://www.tryducky.app/"
+          linkText="visit tryducky"
+          status="green"
+        />
+        <ProjectCard
           title="🌟 aura"
           description="an emotional companion app that provides personalized support and guidance for mental wellness. available exclusively on ios."
           year=""

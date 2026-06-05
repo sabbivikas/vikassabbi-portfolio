@@ -17,7 +17,7 @@ const CreationsSection = () => {
         />
         <ProjectCard
           title="🦆 tryducky"
-          description="built a cross-platform peer-to-peer messaging system where the delivery mechanism is a full-screen animation — a new interaction between friends on desktop. messages are encrypted in transit, hard-deleted on delivery, and the sender gets a real-time delivery confirmation when the duck lands."
+          description="ducky is a new social interaction layer for desktop. you add friends, send them a message, and instead of another boring notification, a duck flies across their screen and delivers it. the sender gets confirmation when the duck lands, the message is encrypted in transit, and it is deleted after delivery."
           year=""
           link="https://www.tryducky.app/"
           linkText="visit tryducky"

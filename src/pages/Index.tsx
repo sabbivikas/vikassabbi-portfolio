@@ -13,6 +13,7 @@ import EducationSection from '@/components/sections/EducationSection';
 import MediaSection from '@/components/sections/MediaSection';
 import PhilosophySection from '@/components/sections/PhilosophySection';
 import Footer from '@/components/sections/Footer';
+import ResumeSection from '@/components/sections/ResumeSection';
 import ReadingProgress from '@/components/ReadingProgress';
 
 
@@ -33,6 +34,7 @@ const Index = () => {
           <StoriesSection />
           <ExperienceSection />
           <EducationSection />
+          <ResumeSection />
           <MediaSection />
           <PhilosophySection />
         </main>

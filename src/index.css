@@ -121,46 +121,17 @@
     animation-delay: 3s;
   }
 
-  .project-card {
-    @apply p-6 rounded-lg transition-all duration-300;
-    border: 1px solid hsl(var(--border));
-    position: relative;
-    overflow: hidden;
+  .prose-link {
+    @apply text-primary transition-colors duration-150;
+    text-decoration: none;
   }
-  
-  .project-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
-    transition: left 0.5s;
+
+  .prose-link:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
   }
-  
-  .project-card:hover::before {
-    left: 100%;
-  }
-  
-  .project-card:hover {
-    @apply shadow-sm;
-    border-color: hsl(var(--border));
-    transform: translateY(-2px);
-  }
-  
-  .philosophy-text {
-    @apply transition-all duration-500;
-  }
-  
-  .philosophy-text span {
-    @apply inline-block transition-all;
-  }
-  
-  .philosophy-letter-animation {
-    animation: float 3s ease-in-out infinite;
-    animation-delay: calc(var(--index) * 120ms);
-  }
+
+
   
 }
 

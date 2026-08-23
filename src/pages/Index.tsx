@@ -1,45 +1,27 @@
-
 import React from 'react';
 import Header from '@/components/Header';
-import { useIsMobile } from '@/hooks/use-mobile';
-
-// Import section components
-import ProfileHeader from '@/components/sections/ProfileHeader';
-import About from '@/components/sections/About';
-import CreationsSection from '@/components/sections/CreationsSection';
-import StoriesSection from '@/components/sections/StoriesSection';
-import ExperienceSection from '@/components/sections/ExperienceSection';
-import EducationSection from '@/components/sections/EducationSection';
-import MediaSection from '@/components/sections/MediaSection';
-import PhilosophySection from '@/components/sections/PhilosophySection';
-import Footer from '@/components/sections/Footer';
-import ResumeSection from '@/components/sections/ResumeSection';
+import Bio from '@/components/sections/Bio';
 import ReadingProgress from '@/components/ReadingProgress';
 
-
 const Index = () => {
-  const isMobile = useIsMobile();
-
   return (
     <>
       <ReadingProgress />
-      
-      <div className="max-w-5xl mx-auto px-6">
+
+      <div className="max-w-[600px] px-6 sm:px-12 pb-24 lowercase">
         <Header />
-        
-        <main className="py-12 lowercase">
-          <ProfileHeader />
-          <About />
-          <CreationsSection />
-          <StoriesSection />
-          <ExperienceSection />
-          <EducationSection />
-          <ResumeSection />
-          <MediaSection />
-          <PhilosophySection />
+
+        <main>
+          <h1 className="text-[2.75rem] leading-none font-bold tracking-tight text-foreground mb-8">
+            hi i'm vikas.
+          </h1>
+
+          <Bio />
         </main>
-        
-        <Footer />
+
+        <footer className="pt-16 text-sm text-muted-foreground/70">
+          © {new Date().getFullYear()} vikas sabbi
+        </footer>
       </div>
     </>
   );

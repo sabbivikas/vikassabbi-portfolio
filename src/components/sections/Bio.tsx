@@ -29,14 +29,13 @@ const Bio = () => {
 
       <p>
         the thing i'm most proud of is{' '}
-        <L href="https://apps.apple.com/us/app/dino-initiative/id6763940737">dino initiative</L> — a
-        gentle, free place for mental health resources and crisis support, no barriers, no judgment.
-        it's backed by one of the largest mental health communities online: 258k on instagram, 94k on
-        tiktok. it's on ios.
+        <L href="https://apps.apple.com/us/app/dino-initiative/id6763940737">dino initiative</L>, a
+        project i'm building to create a personal intelligence. something warm, friendly, and alive,
+        like the world sanrio built with hello kitty, my melody, kuromi, and cinnamoroll. it's on ios.
       </p>
 
       <p>
-        i also built <L href="https://www.tryducky.app/">ducky</L>, a new social layer for desktop —
+        i also built <L href="https://www.tryducky.app/">ducky</L>, a new social layer for desktop.
         you send a friend a message and instead of another boring notification, a duck flies across
         their screen and delivers it. encrypted in transit, deleted after delivery, and you get a
         confirmation when the duck lands.

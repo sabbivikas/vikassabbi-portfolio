@@ -23,8 +23,10 @@ const Bio = () => {
       </p>
 
       <p>
-        right now i'm a product engineer at <L href="https://woz.com">woz (yc w25)</L> and a founder
-        in residence at <L href="https://founders.inc">founders, inc</L>.
+        right now i'm a product engineer at ride the next wave, building marcus, a voice-first ai
+        conversational wise man that helps men navigate major life transitions through thoughtful,
+        context-aware conversations. i'm also a founder in residence at{' '}
+        <L href="https://founders.inc">founders, inc</L>.
       </p>
 
       <p>

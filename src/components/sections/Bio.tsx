@@ -9,7 +9,7 @@ const L: React.FC<{ href: string; children: React.ReactNode }> = ({ href, childr
 
 const Bio = () => {
   return (
-    <div className="space-y-6 text-muted-foreground">
+    <div className="space-y-6 text-foreground">
       <p>i'm just a guy that makes things that feel.</p>
 
       <p>

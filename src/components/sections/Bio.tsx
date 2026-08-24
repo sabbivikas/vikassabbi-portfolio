@@ -23,8 +23,10 @@ const Bio = () => {
       </p>
 
       <p>
-        right now i'm a product engineer at <L href="https://woz.com">woz (yc w25)</L> and a founder
-        in residence at <L href="https://founders.inc">founders, inc</L>.
+        right now i'm a product engineer at ride the next wave, building marcus, a voice-first ai
+        conversational wise man that helps men navigate major life transitions through thoughtful,
+        context-aware conversations. i'm also a founder in residence at{' '}
+        <L href="https://founders.inc">founders, inc</L>.
       </p>
 
       <p>
@@ -64,8 +66,9 @@ const Bio = () => {
       </p>
 
       <p>
-        before all this: app creator at wabi, founder in residence at the residency sf, associate
-        product manager at spawn, product ops at betteryou, and associate technical engineer at ibm.
+        before all this: product engineer at woz (yc w25), app creator at wabi, founder in
+        residence at the residency sf, associate product manager at spawn, product ops at
+        betteryou, and associate technical engineer at ibm.
       </p>
 
       <p>

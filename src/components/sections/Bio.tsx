@@ -99,7 +99,7 @@ const Bio = () => {
       </p>
 
       <p>
-        vasudhaiva kutumbakam. the world is one family. 🌍
+        my favourite belief is vasudhaiva kutumbakam. the world is one family. 🌍
       </p>
 
       <ResumeSection />

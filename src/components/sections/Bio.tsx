@@ -66,8 +66,9 @@ const Bio = () => {
       </p>
 
       <p>
-        before all this: app creator at wabi, founder in residence at the residency sf, associate
-        product manager at spawn, product ops at betteryou, and associate technical engineer at ibm.
+        before all this: product engineer at woz (yc w25), app creator at wabi, founder in
+        residence at the residency sf, associate product manager at spawn, product ops at
+        betteryou, and associate technical engineer at ibm.
       </p>
 
       <p>

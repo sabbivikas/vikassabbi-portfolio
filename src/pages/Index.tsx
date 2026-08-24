@@ -19,7 +19,7 @@ const Index = () => {
           <Bio />
         </main>
 
-        <footer className="pt-16 text-sm text-muted-foreground/70">
+        <footer className="pt-16 text-sm text-foreground/60">
           © {new Date().getFullYear()} vikas sabbi
         </footer>
       </div>

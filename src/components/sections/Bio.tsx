@@ -67,8 +67,15 @@ const Bio = () => {
 
       <p>
         before all this: product engineer at woz (yc w25), app creator at wabi, founder in
-        residence at the residency sf, associate product manager at spawn, product ops at
-        betteryou, and associate technical engineer at ibm.
+        residence at the residency sf, founding creator at spawn where i helped shape the product
+        from v1 to v2, and associate technical engineer at ibm.
+      </p>
+
+      <p>
+        at betteryou, i started as an intern during my final semester. that turned into a full-time
+        role where sean created the position for me because he liked my work. betteryou was my
+        first company after coming to the us, so it will always be special to me. i love the product
+        and the problem they are trying to solve.
       </p>
 
       <p>
@@ -92,7 +99,7 @@ const Bio = () => {
       </p>
 
       <p>
-        vasudhaiva kutumbakam. the world is one family. 🌍
+        my favourite belief is vasudhaiva kutumbakam. the world is one family. 🌍
       </p>
 
       <ResumeSection />

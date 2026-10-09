@@ -10,7 +10,7 @@ const L: React.FC<{ href: string; children: React.ReactNode }> = ({ href, childr
 const Bio = () => {
   return (
     <div className="space-y-6 text-foreground">
-      <p>i'm just a guy that makes things that feel.</p>
+      <p>i'm just a guy that builds things with soul.</p>
 
       <p>
         things that tell stories, spark emotion, and make people pause, even for a moment, to
@@ -94,8 +94,8 @@ const Bio = () => {
 
       <p>
         i come from a software engineering background, but the work lives at the intersection of
-        storytelling, technology, and human connection. my goal isn't to follow trends. it's to make
-        things that matter. things with soul.
+        storytelling, technology, and human connection. my goal isn't to follow trends. it's to build
+        things that matter.
       </p>
 
       <p>

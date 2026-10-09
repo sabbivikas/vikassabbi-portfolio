@@ -94,8 +94,8 @@ const Bio = () => {
 
       <p>
         i come from a software engineering background, but the work lives at the intersection of
-        storytelling, technology, and human connection. my goal isn't to follow trends. it's to make
-        things that matter. things with soul.
+        storytelling, technology, and human connection. my goal isn't to follow trends. it's to build
+        things that matter.
       </p>
 
       <p>

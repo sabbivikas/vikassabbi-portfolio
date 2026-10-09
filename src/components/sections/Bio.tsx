@@ -10,7 +10,7 @@ const L: React.FC<{ href: string; children: React.ReactNode }> = ({ href, childr
 const Bio = () => {
   return (
     <div className="space-y-6 text-foreground">
-      <p>i build things that have soul.</p>
+      <p>i'm just a guy who builds things that have soul.</p>
 
       <p>
         things that tell stories, spark emotion, and make people pause, even for a moment, to

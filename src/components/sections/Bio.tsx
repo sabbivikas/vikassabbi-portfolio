@@ -24,7 +24,8 @@ const Bio = () => {
 
       <p>
         right now i'm a member of product staff at sincerely studios (a16z speedrun sr003),
-        building srsly, an agentic companion that lives in your messages and actually follows
+        building <L href="https://apps.apple.com/us/app/srsly-in-your-corner/id6767045551">srsly</L>, an agentic companion that lives in your
+        messages and actually follows
         through on the things you care about.
       </p>
 

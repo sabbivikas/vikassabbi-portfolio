@@ -58,7 +58,7 @@ const Bio = () => {
       <p>
         other things i've made: <L href="https://apps.apple.com/us/app/aura-emotional-companion/id6752574726">aura</L>,
         an emotional companion on ios.{' '}
-        <L href="https://ai-hr-real-time-interviewer-78048118432.us-east1.run.app">hireai</L>, a
+        <L href="https://hire-ai.ai.studio">hireai</L>, a
         real-time ai interviewer that runs live technical and behavioral interviews.{' '}
         <L href="https://orgresearch.lovable.app">org research</L>, a research assistant for
         understanding companies deeply.{' '}

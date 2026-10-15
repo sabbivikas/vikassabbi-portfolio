@@ -24,7 +24,7 @@ const Bio = () => {
 
       <p>
         right now i'm a member of product staff at sincerely studios (a16z speedrun sr003),
-        building seriously, an agentic companion that lives in your messages and actually follows
+        building srsly, an agentic companion that lives in your messages and actually follows
         through on the things you care about.
       </p>
 

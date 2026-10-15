@@ -7,7 +7,7 @@ const ResumeSection = () => {
   return (
     <div id="resume">
       <p>
-        my full resume is here —{' '}
+        my full resume is here,{' '}
         <button type="button" onClick={() => setShowViewer((v) => !v)} className="prose-link">
           {showViewer ? 'hide it' : 'view it'}
         </button>{' '}

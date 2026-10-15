@@ -23,9 +23,15 @@ const Bio = () => {
       </p>
 
       <p>
-        right now i'm a product engineer at ride the next wave, building marcus, a voice-first ai
+        right now i'm a member of product staff at sincerely studios, building seriously, an agentic
+        companion that lives in your messages and actually follows through on the things you care
+        about.
+      </p>
+
+      <p>
+        i'm also an ai product engineer at ride the next wave, building markos, a voice-first ai
         conversational wise man that helps men navigate major life transitions through thoughtful,
-        context-aware conversations. i'm also a founder in residence at{' '}
+        context-aware conversations. i'm a founder in residence at{' '}
         <L href="https://founders.inc">founders, inc</L>.
       </p>
 
@@ -41,6 +47,11 @@ const Bio = () => {
         you send a friend a message and instead of another boring notification, a duck flies across
         their screen and delivers it. encrypted in transit, deleted after delivery, and you get a
         confirmation when the duck lands.
+      </p>
+
+      <p>
+        i also made <L href="https://namiandfriends.netlify.app">nami and friends</L>, a desktop pet
+        app with animated pets that live on your screen. it's named after my dog, nami.
       </p>
 
       <p>
@@ -66,9 +77,8 @@ const Bio = () => {
       </p>
 
       <p>
-        before all this: product engineer at woz (yc w25), app creator at wabi, founder in
-        residence at the residency sf, founding creator at spawn where i helped shape the product
-        from v1 to v2, and associate technical engineer at ibm.
+        before all this: ai product engineer at woz (yc w25), founder in residence at the residency
+        sf, and associate technical engineer at ibm.
       </p>
 
       <p>

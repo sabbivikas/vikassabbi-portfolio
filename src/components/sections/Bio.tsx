@@ -30,10 +30,7 @@ const Bio = () => {
       </p>
 
       <p>
-        i'm also an ai product engineer at ride the next wave, building markos, a voice-first ai
-        conversational wise man that helps men navigate major life transitions through thoughtful,
-        context-aware conversations. i'm a founder in residence at{' '}
-        <L href="https://founders.inc">founders, inc</L>.
+        i'm a founder in residence at <L href="https://founders.inc">founders, inc</L>.
       </p>
 
       <p>
@@ -64,8 +61,9 @@ const Bio = () => {
         understanding companies deeply.{' '}
         <L href="https://vihari.earth">vihari.earth</L>, a quiet story platform where one frame
         sparks a thousand imaginations.{' '}
-        <L href="https://ammamma.online">ammamma.online</L>, a tribute to the wisdom of grandmothers.
-        and a <L href="https://tip-calculator.replit.app/">tip calculator</L> i built the night
+        <L href="https://ammamma.online">ammamma.online</L>, a tribute to the wisdom of grandmothers.{' '}
+        <L href="https://tryguidy.com">guidy</L>. and a{' '}
+        <L href="https://tip-calculator.replit.app/">tip calculator</L> i built the night
         friends struggled to split a bill and sold to a restaurant the next morning.
       </p>
 
@@ -78,8 +76,10 @@ const Bio = () => {
       </p>
 
       <p>
-        before all this: ai product engineer at woz (yc w25), founder in residence at the residency
-        sf, and associate technical engineer at ibm.
+        before all this: ai product engineer at ride the next wave, where i built markos, a
+        voice-first ai conversational wise man that helps men navigate major life transitions. ai
+        product engineer at woz (yc w25), founder in residence at the residency sf, and associate
+        technical engineer at ibm.
       </p>
 
       <p>

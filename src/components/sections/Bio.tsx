@@ -62,7 +62,8 @@ const Bio = () => {
         <L href="https://vihari.earth">vihari.earth</L>, a quiet story platform where one frame
         sparks a thousand imaginations.{' '}
         <L href="https://ammamma.online">ammamma.online</L>, a tribute to the wisdom of grandmothers.{' '}
-        <L href="https://tryguidy.com">guidy</L>. and a{' '}
+        <L href="https://tryguidy.com">guidy</L>, a simple interface for your screens that helps you
+        learn tools and navigate between screens. and a{' '}
         <L href="https://tip-calculator.replit.app/">tip calculator</L> i built the night
         friends struggled to split a bill and sold to a restaurant the next morning.
       </p>
